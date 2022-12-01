@@ -11,13 +11,14 @@ program
     .option('-o, --output [output]', 'output type [raw|dashed|spaced]', /^(raw|dashed|spaced)$/i)
     .parse(process.argv)
 
-let project_name = generate({words: program.words, number: program.numbers, alliterative: program.alliterative});
+const options = program.opts();
+let project_name = generate({words: options.words, number: options.numbers, alliterative: options.alliterative});
 
-if (program.output == "dashed"){
+if (options.output == "dashed"){
     console.log(project_name.dashed);
-} else if (program.output == "raw") {
+} else if (options.output == "raw") {
     console.log(project_name.raw);
-} else if (program.output == "spaced") {
+} else if (options.output == "spaced") {
     console.log(project_name.spaced);
 } else {
     console.log(project_name);
