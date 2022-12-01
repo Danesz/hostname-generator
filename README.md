@@ -1,4 +1,4 @@
-# Hostame Generator
+# Hostname Generator
 
 **Forked from** [aceakash/project-name-generator](https://github.com/aceakash/project-name-generator)
 
