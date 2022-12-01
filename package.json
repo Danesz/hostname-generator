@@ -1,6 +1,6 @@
 {
-  "name": "project-name-generator",
-  "version": "2.1.9",
+  "name": "hostname-generator",
+  "version": "1.0.0",
   "description": "Generate a random, unique, heroku-like name for your app/project/server etc. e.g. \"resonant-silence\"",
   "types": "src/generator.d.ts",
   "main": "src/generator.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/aceakash/project-name-generator.git"
+    "url": "git://github.com/Danesz/hostname-generator.git"
   },
   "keywords": [
     "heroku",
@@ -21,9 +21,9 @@
     "unique",
     "random",
     "generator",
-    "generater"
+    "hostname"
   ],
-  "author": "Akash Kurdekar",
+  "author": "Danesz",
   "license": "ISC",
   "devDependencies": {
     "mocha": "^10.1.0",
@@ -34,6 +34,6 @@
     "lodash": "^4.17.20"
   },
   "bin": {
-    "project-name-generator": "src/generator-bin.js"
+    "hostaname-generator": "src/generator-bin.js"
   }
 }

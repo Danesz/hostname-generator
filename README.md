@@ -1,15 +1,17 @@
-# Project Name Generator
+# Hostame Generator
+
+**Forked from** [aceakash/project-name-generator](https://github.com/aceakash/project-name-generator)
 
 Generate quirky names like *spiffy-waterfall*, *sassy-bread*, *mature-dew-8239* to use wherever you need a random but memorable name.
 
 Useful for object names, temp folders, passwords, project names, unique ids etc
 
 ## Install
-`npm install project-name-generator --save`
+`npm install hostname-generator --save`
 
 ## Quick Start
 ```javascript
-var generate = require('project-name-generator');
+var generate = require('hostname-generator');
 
 generate().dashed; // 'uptight-guitar'
 
@@ -29,11 +31,11 @@ generate({ words: 2, alliterative: true }).spaced; // 'elegant experience'
 
 ## Quickstart CLI
 This package contains a cli script.  You can pull in the package globally using npm
-`npm install -g project-name-generator`
+`npm install -g hostname-generator`
 
 Call from your command line
 ```
-$ project-name-generator
+$ hostname-generator
 { raw: [ 'spry', 'bath' ],
   dashed: 'spry-bath',
   spaced: 'spry bath' }
@@ -41,9 +43,9 @@ $ project-name-generator
 
 For CLI options 
 ```
-project-name-generator -h
+hostname-generator -h
 
-Usage: project-name-generator [options]
+Usage: hostname-generator [options]
 
 
 Options:
@@ -109,7 +111,4 @@ npm install
 npm test
 ```
 
-The library has been tested with Node.js 12.18.4
-
-## Status
-![How up-to-date are dependencies?](https://david-dm.org/aceakash/project-name-generator.svg)
+The library has been tested with Node.js 16.17.0
